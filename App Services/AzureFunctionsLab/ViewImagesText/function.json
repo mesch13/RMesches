@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "return",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "type": "table",
+      "name": "inputTable",
+      "tableName": "ImagesText",
+      "partitionKey": "TryFunctions",
+      "take": 50,
+      "connection": "azurefunctions35c86a73_STORAGE",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
